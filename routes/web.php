@@ -24,7 +24,7 @@ Route::get('/images/{path}', function (Illuminate\Http\Request $request, $path) 
 
 Route::get('/{vue_capture?}', function () {
     return view('app');
-})->where('vue_capture', '(.*)');
+})->where('vue_capture', '(.*)')->name('home_page');
 
 Auth::routes();
 

@@ -1,6 +1,6 @@
 <template lang="html">
     <div>
-        <input type="text" class="form-control" name="birthday" :value="value" autocomplete="off" />
+        <input class="form-control" name="birthday" :value="value" :placeholder="placeholder" />
     </div>
 </template>
 
@@ -21,7 +21,8 @@ export default {
     data() {
         return {
             value: !this.date ? this.date : window.moment(this.date).format('L'),
-            standTime: this.date
+            standTime: this.date,
+            placeholder: window.moment().format('L')
         }
     },
     created() {

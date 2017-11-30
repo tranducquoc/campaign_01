@@ -62,7 +62,8 @@
         "value": "Quyên góp",
         "goal_id": "Đơn vị",
         "confirm_delete_donation": "Bạn có chắc muốn xóa quyên góp này?",
-        "dblclick_to_edit": "Bấm <b>Ctrl + Click</b> vào trường có dấu (*) để chỉnh sửa"
+        "dblclick_to_edit": "Bấm <b>Ctrl + Click</b> vào trường có dấu (*) để chỉnh sửa",
+        "date_donate": "Ngày"
     },
     "expenses": {
         "expense": "Chi tiêu",
