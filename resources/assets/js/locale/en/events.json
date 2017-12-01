@@ -62,7 +62,8 @@
         "value": "Donate",
         "goal_id": "Donation type",
         "confirm_delete_donation": "Are you sure you want to delete this donation?",
-        "dblclick_to_edit": "Press <b>Ctrl + Click</b> on the field marked with (*) to edit"
+        "dblclick_to_edit": "Press <b>Ctrl + Click</b> on the field marked with (*) to edit",
+        "date_donate": "Date"
     },
     "expenses": {
         "expense": "Expense",

@@ -72,4 +72,7 @@ return [
         'campaign' => 'campaign',
         'comment' => 'comment',
     ],
+    'email' => [
+        'logo' => 'http://campaign.framgia.vn/images/logo.png',
+    ],
 ];

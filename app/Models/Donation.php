@@ -33,6 +33,7 @@ class Donation extends BaseModel
         'donor_email',
         'donor_phone',
         'donor_address',
+        'created_at',
     ];
 
     protected $dates = ['deleted_at'];

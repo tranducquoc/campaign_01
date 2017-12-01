@@ -43,6 +43,7 @@ class DonationController extends ApiController
             $donateData[$key]['donor_address'] = $request->get('donor_address');
             $donateData[$key]['recipient_id'] = $request->get('recipient_id');
             $donateData[$key]['note'] = $request->get('note');
+            $donateData[$key]['created_at'] = $request->get('donated_at')[$key];
         }
 
         return $this->doAction(function () use ($event, $donateData) {
