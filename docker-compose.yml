@@ -4,9 +4,11 @@ services:
     build: .
     container_name: campaign-web
     volumes:
-      - ./:/app
+      - ./:/var/www/html
     ports:
       - "90:80"
+    extra_hosts:
+      - "campaign.local:127.0.0.1"
     links:
       - redis
       - serverdb
@@ -25,4 +27,4 @@ services:
     volumes:
       - ./data/redis:/data
     ports:
-        - "6379:6379"
+        - "6380:6379"

@@ -9,11 +9,7 @@ public/js
 public/css
 public/images/
 public/mix-manifest.json
-storage/*.key
-storage/debugbar/
-storage/files/
-storage/2017/
-storage/cache/
+storage/
 vendor
 .idea
 .env

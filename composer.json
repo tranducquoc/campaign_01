@@ -17,7 +17,8 @@
         "nicolaslopezj/searchable": "^1.9",
         "predis/predis": "^1.1",
         "spatie/laravel-activitylog": "^1.15",
-        "framgia-education/laravel-omniauth-hrsystem": "dev-framgia-5.4"
+        "framgia-education/laravel-omniauth-hrsystem": "dev-framgia-5.4",
+        "barryvdh/laravel-debugbar": "^2.3"
     },
     "repositories": [
         {
