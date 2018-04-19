@@ -4,14 +4,12 @@
 
 ### Summary:
 - [Bug] / [Feature]
-- Feature : Search vendor
+- Feature :
 
 ### Why need create this PR:
 - fix bugs/ refactor code
 - .....
 
 ### Effect:
-- Search and return vendor.
 
 ### Link Issue:
-https://github.com/LobeSoftware/LoBeAPI/issues/37
