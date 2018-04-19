@@ -13,7 +13,6 @@ RUN apt-get install -y --force-yes php7.1-bcmath php7.1-bz2 php7.1-cli php7.1-co
     php7.1-tidy php7.1-xml php7.1-xmlrpc php7.1-xsl php7.1-zip \
     php-tideways php-mongodb
 
-
 RUN curl -sS https://getcomposer.org/installer -o composer-setup.php
 RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
@@ -56,8 +55,12 @@ WORKDIR /var/www/html
 # Expose apache.
 EXPOSE 80 443
 
+ADD conf.d/laravel-worker.conf /etc/supervisor/conf.d/laravel-worker.conf
+ADD conf.d/startup.sh /usr/bin/startup.sh
+RUN chmod +x /usr/bin/startup.sh
+
 COPY conf.d/default.conf /etc/nginx/sites-available/default
 COPY conf.d/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Default command
-CMD ["/usr/bin/supervisord"]
+CMD ["/bin/bash", "/usr/bin/startup.sh"]

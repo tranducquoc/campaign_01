@@ -17,11 +17,10 @@ Pop-up doesn't close...
 System should ...
 
 ### Evidence:
-https://drive.google.com/file/d/1zgzYUUl_uk4afx91vji34zo5XgxbbU7t/view?usp=sharing
 
 /// TASK
 ## Summary:
 - Login feature
 
 ### Design:
-- https://zpl.io/29l36ye
+
