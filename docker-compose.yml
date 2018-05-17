@@ -7,8 +7,9 @@ services:
       - ./:/var/www/html
     ports:
       - "90:80"
+      - "8890:8890"
     extra_hosts:
-      - "campaign.local:127.0.0.1"
+      - "campaign.framgia.vn:127.0.0.1"
     links:
       - redis
       - serverdb

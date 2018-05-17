@@ -50,10 +50,12 @@ RUN apt-get install -y ffmpeg
 #ADD conf.d/mongodb.ini /etc/php/7.0/cli/conf.d/30-mongodb.ini
 #ADD conf.d/mongodb.ini /etc/php/7.0/mods-available//mongodb.ini
 
+RUN apt-get install -y libpng16-dev
+
 WORKDIR /var/www/html
 
 # Expose apache.
-EXPOSE 80 443
+EXPOSE 80 443 8890
 
 ADD conf.d/laravel-worker.conf /etc/supervisor/conf.d/laravel-worker.conf
 ADD conf.d/startup.sh /usr/bin/startup.sh
@@ -63,4 +65,4 @@ COPY conf.d/default.conf /etc/nginx/sites-available/default
 COPY conf.d/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 # Default command
-CMD ["/bin/bash", "/usr/bin/startup.sh"]
+CMD ["/usr/bin/supervisord"]
